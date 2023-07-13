@@ -20,6 +20,10 @@ public final class Route {
             throw new IllegalArgumentException("The vehicle must be in operation.");
         }
     }
+
+    public void removeVehicle(Vehicle vehicle){
+        vehicles.remove(vehicle);
+    }
     public List<Station> getStations() {
         return stations;
     }
